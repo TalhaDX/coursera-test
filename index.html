@@ -6,13 +6,48 @@
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
+    <style> body { font-size: 1.3em; } </style>
 
-    <title>Angular Example</title>
+    <title>Name Calculator</title>
 
 </head>
 
-<body>
-<h1>The content ......</h1>
+<body ng-app="nameCalculator">
+
+<h1>Name Calculator</h1>
+
+    <div ng-controller="nameCalculatorController">
+        <div>
+
+            Your name:
+            <input type="text"
+                   ng-model="name"
+                   ng-keyup="displayNumeric();">
+        </div>
+        <div>
+            Total Numeric value of person's
+            name is: {{totalValue}}
+        </div>
+        {{name}}
+
+    </div>
+
+        <div ng-controller="nameCalculatorController">
+            <input type="text"
+                   ng-model="name"
+                    ng-blur="upper();">
+        </div>
+
+    <div ng-controller="MsgController">
+        {{sayMessage()}}
+    </div>
+
+    <div ng-controller="MsgController">
+        <button ng-click="feedMe()">Feed Me</button>
+        <br>
+        <img width="300px" height="300px" ng-src="me_{{stateOfBeing}}.jpg">
+    </div>
+
 </body>
 
 </html>

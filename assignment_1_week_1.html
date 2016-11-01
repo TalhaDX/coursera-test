@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="assignment_1_week_1.js"></script>
+    <style> body { font-size: 1em; } </style>
+
+    <title>Assignment 1</title>
+
+</head>
+
+<body ng-app="Assignment">
+
+<h1>Assignment 1</h1>
+
+    <div  ng-controller="AssignmentController">
+
+        <input type="text" ng-model="name">
+        <button ng-click="Display()">Check If Too Much</button><br>
+            {{message}}
+        <br>
+    </div>
+
+</body>
+
+</html>
