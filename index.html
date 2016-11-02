@@ -5,47 +5,20 @@
 <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
-    <script src="app.js"></script>
-    <style> body { font-size: 1.3em; } </style>
+    <style> body { font-size: 1em; } </style>
 
-    <title>Name Calculator</title>
+    <title>Single page web apps with AngularJS</title>
 
 </head>
 
-<body ng-app="nameCalculator">
+<body>
 
-<h1>Name Calculator</h1>
+    <H2>Single page web apps with AngularJS</H2>
 
-    <div ng-controller="nameCalculatorController">
-        <div>
-
-            Your name:
-            <input type="text"
-                   ng-model="name"
-                   ng-keyup="displayNumeric();">
-        </div>
-        <div>
-            Total Numeric value of person's
-            name is: {{totalValue}}
-        </div>
-        {{name}}
-
-    </div>
-
-        <div ng-controller="nameCalculatorController">
-            <input type="text"
-                   ng-model="name"
-                    ng-blur="upper();">
-        </div>
-
-    <div ng-controller="MsgController">
-        {{sayMessage()}}
-    </div>
-
-    <div ng-controller="MsgController">
-        <button ng-click="feedMe()">Feed Me</button>
-        <br>
-        <img width="300px" height="300px" ng-src="me_{{stateOfBeing}}.jpg">
+    <div>
+    Week 1<br>
+        <a href="testing.html">Assignment 1</a> <br>
+        <a href="Week_1_Assignment_1/index.html">Assignment 1</a> <br>
     </div>
 
 </body>
